@@ -1,0 +1,209 @@
+.work-process-grid {
+  display: grid;
+  gap: 28px;
+  margin-top: 42px;
+}
+
+.sticky-analysis {
+  margin-top: 42px;
+}
+
+.sticky-analysis h3 {
+  margin: 10px 0 24px;
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+}
+
+.sticky-notes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: center;
+}
+
+.sticky-note-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.sticky-note-card img {
+  display: block;
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  padding: 12px;
+  border-radius: 16px;
+}
+
+.sticky-note-card-landscape {
+  position: relative;
+  grid-column: 1 / -1;
+  width: 100%;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+  background: transparent;
+}
+
+.sticky-note-card-landscape img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 56.25%;
+  height: 177.78%;
+  max-height: none;
+  object-fit: contain;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.wireframe-section {
+  margin-top: 48px;
+}
+
+.wireframe-section h3 {
+  margin: 10px 0 24px;
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+}
+
+.wireframe-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.wireframe-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.wireframe-card figcaption {
+  padding: 0 16px 16px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.wireframe-card img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  padding: 12px;
+  border-radius: 16px;
+}
+
+.work-process-title {
+  margin: 64px 0 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.work-process-card {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(280px, 0.8fr);
+  gap: 28px;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.process-video-wrap {
+  min-height: 360px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #f5f5f2;
+}
+
+.process-video {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  background: #f5f5f2;
+}
+
+.process-explanation {
+  padding: 12px 18px;
+}
+
+.process-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(156, 215, 255, 0.15);
+  color: #9cd7ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.process-explanation h3 {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-size: 28px;
+}
+
+.process-explanation p {
+  margin: 0;
+  color: #dfe5eb;
+  font-size: 18px;
+  line-height: 1.65;
+  text-align: left;
+}
+
+@media (max-width: 850px) {
+  .sticky-notes-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .sticky-note-card img {
+    max-height: 280px;
+  }
+
+  .wireframe-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wireframe-card img {
+    max-height: 360px;
+  }
+
+  .work-process-card {
+    grid-template-columns: 1fr;
+  }
+
+  .process-video-wrap,
+  .process-video {
+    min-height: 260px;
+    height: 260px;
+  }
+
+  .process-explanation {
+    padding: 10px 4px 4px;
+  }
+
+  .process-explanation h3 {
+    font-size: 24px;
+  }
+
+  .process-explanation p {
+    font-size: 16px;
+  }
+}

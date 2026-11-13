@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Case Study — UI/UX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/case-study.css">
+    <link rel="stylesheet" href="../assets/css/case-study-nav.css">
+    <link rel="stylesheet" href="../assets/css/process-section.css">
+  </head>
+  <body>
+    <div class="stars"></div>
+
+    <header class="header">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">SA</span>My Website<em>.</em>
+      </a>
+
+      <button class="menu" aria-label="Menu">☰</button>
+
+      <nav class="nav">
+        <a class="" href="index.html">Home</a>
+        <a class="" href="about.html">About</a>
+        <a class="" href="skills.html">Skills</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a class="" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <aside class="case-sidebar" aria-label="Case study navigation">
+      <a class="case-sidebar-brand" href="index.html">Sugi Alfin</a>
+      <nav class="case-sidebar-nav" aria-label="Case study sections">
+        <a href="#intro">Problem and Solution</a>
+        <a href="#research">Before redesign</a>
+        <div class="case-sidebar-group">
+          <a href="#design">Process Design</a>
+          <div class="case-sidebar-subnav" aria-label="Process Design sections">
+            <a href="#analysis">Sticky Notes</a>
+            <a href="#wireframe">Wireframe</a>
+            <a href="#work-process">Improvement Process</a>
+            <a href="#mobile-process">Fixing Mobile Navigation</a>
+            <a href="#desktop-process">Clarifying the Desktop Submenu</a>
+          </div>
+        </div>
+        <a href="#evaluation">Before and After</a>
+        <a href="#prototype">Prototype</a>
+        <a href="#conclusion">Conclusion</a>
+      </nav>
+    </aside>
+
+    <main class="page case">
+      <a class="back" href="projects.html">← Semua proyek</a>
+
+      <section class="case-hero">
+        <div>
+          <p class="eyebrow">MISSION 03 / PERSONAL CONCEPT</p>
+          <h1>Case<br><em>Study</em></h1>
+          <p class="lead">Menganalisis permasalahan yang di alami dan<br>Mencari solusi nya</p>
+
+          <div class="actions">
+            <a class="btn btn-light" href="#prototype">Coba prototype ↗</a>
+            <a class="btn" href="#intro">Jelajahi proses ↓</a>
+          </div>
+        </div>
+
+        <div class="hero-art" style="background: #ffffff;">
+          <span class="orbit-label" style="color: #101d2d;"></span>
+          <figure style="margin: 0; display: flex; flex-direction: column; align-items: center;">
+            <img src="../assets/images/logo.webp" alt="Logo SMAN 1 Cikarang Pusat" style="display: block; max-width: 220px; height: auto;">
+            <figcaption style="width: 100%; margin-top: 12px; color: #101d2d; text-align: center; font-weight: 700; font-size: 18px;">SMAN 1 Cikarang Pusat</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <div class="metadata">
+        <div>
+          <small>PROJECT TYPE</small>
+          <b>Personal UI/UX concept</b>
+        </div>
+        <div>
+          <small>DELIVERABLE</small>
+          <b>Case study + web prototype</b>
+        </div>
+        <div>
+          <small>TOOLS</small>
+          <b>HTML / CSS / JavaScript</b>
+        </div>
+        <div>
+          <small>STATUS</small>
+          <b>Belum diuji pengguna</b>
+        </div>
+      </div>
+
+      
+      <section id="intro" class="case-section">
+        <p class="eyebrow">01 / INTRODUCTION</p>
+        <h2>Permasalahan dan<br><em>Solusi.</em></h2>
+        <p class="intro-copy">Mengobservasi Permasalahan dan Mencari Solusi</p>
+
+      <section class="overview-section">
+        <div class="overview-head">
+          <span>OVERVIEW</span>
+        </div>
+
+        <div class="overview-body">
+          <h3>Problem</h3>
+          <p>
+           Permasalahan navigasi ditemukan pada menu Informasi, khususnya submenu Informasi Berkala, baik pada tampilan mobile maupun desktop. Pada tampilan mobile, arah terbukanya dropdown tidak sesuai dengan arah ikon panah yang menunjukkan keberadaan submenu lanjutan. Sementara itu, pada tampilan desktop, item Informasi Berkala di dalam dropdown menu Informasi tidak memiliki ikon panah, meskipun masih terdapat submenu di dalamnya. Ketidaksesuaian dan ketiadaan penanda tersebut dapat membingungkan pengguna dalam memahami struktur navigasi serta menemukan informasi yang dibutuhkan.
+          </p>
+        </div>
+      </section>
+
+
+      <section id="research" class="before-usage">
+        <div class="before-scroll">
+          <span>▼</span>
+        </div>
+
+        <h3 class="before-title">
+          Before redesign<br>
+          <span class="before-subtitle">Mobile vs desktop</span>
+        </h3>
+
+        <div class="comparison-grid">
+          <div class="device-group mobile-group">
+            <h4>Mobile</h4>
+            <div class="device-grid mobile-grid">
+              <article class="menu-card asset-card mobile-card">
+                <img src="../assets/images/home.jpeg" alt="Halaman home versi mobile sebelum redesign">
+              </article>
+
+              <article class="menu-card asset-card mobile-card">
+                <img src="../assets/images/menu.jpeg" alt="Halaman menu versi mobile sebelum redesign">
+              </article>
+
+              <article class="menu-card asset-card mobile-card">
+                <img src="../assets/images/informasi.jpeg" alt="Halaman informasi versi mobile sebelum redesign">
+              </article>
+
+              <article class="menu-card asset-card mobile-card">
+                <img src="../assets/images/informasi berkala.jpeg" alt="Halaman informasi berkala versi mobile sebelum redesign">
+              </article>
+            </div>
+          </div>
+
+          <div class="device-group desktop-group">
+            <h4>Desktop</h4>
+            <div class="device-grid desktop-grid">
+              <article class="menu-card asset-card desktop-card">
+                <img src="../assets/images/home dekstop.png" alt="Halaman home versi desktop sebelum redesign">
+              </article>
+
+              <article class="menu-card asset-card desktop-card">
+                <img src="../assets/images/menu dekstop.png" alt="Halaman menu versi desktop sebelum redesign">
+              </article>
+
+              <article class="menu-card asset-card desktop-card">
+                <img src="../assets/images/informasi dekstop.png" alt="Halaman informasi versi desktop sebelum redesign">
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="user-comments-section">
+        <h3 class="comments-title">As a result...</h3>
+
+        <div class="comment-compare">
+          <div class="comment-group">
+            <h4>Mobile</h4>
+            <div class="comments-grid">
+              <blockquote class="comment-card">
+                "Saya merasa di halaman mobile ini saat memencet tombol informasi dan informasi berkala, arah navigasinya tidak jelas."
+              </blockquote>
+
+              <blockquote class="comment-card">
+                "Arah dropdown informasi dan informasi berkala tidak sesuai dengan tanda panahnya."
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="comment-divider" aria-hidden="true"></div>
+
+          <div class="comment-group">
+            <h4>Desktop</h4>
+            <div class="comments-grid">
+              <blockquote class="comment-card">
+                "Mengapa di dropdown sub menu informasinya tidak ada tanda panah untuk menunjukan ada sub menu lain di dalam sub menu itu? Itu membuat saya cukup sulit menemukan sub menu yang ada di dalam informasi berkala."
+              </blockquote>
+
+              <blockquote class="comment-card">
+                "Saya perlu lebih berhati-hati saat mengecek informasi karena struktur navigasinya masih membingungkan."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="solution-layout">
+          <div class="solution-copy">
+            <h4>Solution</h4>
+            <p>
+             Solusi yang diusulkan adalah menyesuaikan ikon panah dengan perilaku dropdown serta melengkapi penanda pada setiap menu yang memiliki submenu. Pada tampilan mobile, arah ikon panah pada menu "Informasi" dan "Informasi Berkala" disesuaikan dengan arah terbukanya submenu serta berubah ketika submenu dibuka atau ditutup. Pada tampilan desktop, ikon panah ditambahkan pada item "Informasi Berkala" untuk menunjukkan adanya submenu lanjutan. Perbaikan ini bertujuan memperjelas struktur navigasi, membuat interaksi lebih konsisten, dan membantu pengguna menemukan informasi yang dibutuhkan.
+            </p>
+          </div>
+
+          <div class="solution-meta">
+            <div>
+              <h5>My Role</h5>
+              <p>UI/UX Designer, Researcher, and Visual Designer</p>
+            </div>
+            <div>
+              <h5>Timeline</h5>
+              <p>Menemukan Konsep nya 2 minggu, Membuat Prototype dan Halaman Case Study nya 3 minggu</p>
+            </div>
+            <div>
+              <h5>Tools</h5>
+              <p>Figma, VS Code, HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="design" class="case-section">
+        <p class="eyebrow">02 / DESIGN PROCESS</p>
+        <h2>Proses<br><em>Desain.</em></h2>
+        <p class="intro-copy">Proses desain melibatkan pengamatan terhadap permasalahan dan pencarian solusi yang efektif.</p>
+
+        <div class="sticky-analysis">
+          <p class="eyebrow">ANALYSIS / WHAT TO FIX</p>
+          <h3 id="wireframe">Sticky Notes</h3>
+          <div class="sticky-notes-grid">
+            <figure class="sticky-note-card">
+              <img src="../assets/images/stickty notes 2.jpeg" alt="Analisis perbaikan sticky notes 2">
+            </figure>
+            <figure class="sticky-note-card">
+              <img src="../assets/images/stickty notes 3.jpeg" alt="Analisis perbaikan sticky notes 3">
+            </figure>
+            <figure class="sticky-note-card sticky-note-card-landscape">
+              <img src="../assets/images/stickty notes 1.jpeg" alt="Analisis perbaikan sticky notes 1">
+            </figure>
+          </div>
+        </div>
+
+        <div class="wireframe-section">
+          <p class="eyebrow">WIREFRAME / STRUCTURE</p>
+          <h3 id="wireframe">Wireframe</h3>
+          <div class="wireframe-grid">
+            <figure class="wireframe-card">
+              <img src="../assets/images/wireframe1.jpeg" alt="Wireframe navigasi versi mobile">
+              <figcaption>Mobile</figcaption>
+            </figure>
+            <figure class="wireframe-card">
+              <img src="../assets/images/wireframe2 .jpeg" alt="Wireframe navigasi versi desktop">
+              <figcaption>Desktop</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        
+        <h3 id="work-process" class="work-process-title">Proses Perbaikan</h3>
+        <div class="work-process-grid">
+          <article class="work-process-card">
+            <div class="process-video-wrap">
+              <video class="process-video" autoplay loop muted playsinline preload="auto" poster="">
+                <source src="../assets/videos/1.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video.
+              </video>
+            </div>
+            <div class="process-explanation">
+              <span class="process-label">Mobile</span>
+              <h3 id="mobile-process">Memperbaiki navigasi mobile</h3>
+              <p>Ikon panah disesuaikan dengan arah terbukanya dropdown pada menu Informasi dan Informasi Berkala. Ikon juga diperbarui agar berubah antara keadaan terbuka dan tertutup, sehingga pengguna dapat memahami struktur submenu dengan lebih jelas.</p>
+            </div>
+          </article>
+
+          <article class="work-process-card">
+            <div class="process-video-wrap">
+              <video class="process-video" autoplay loop muted playsinline preload="auto" poster="">
+                <source src="../assets/videos/2.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video.
+              </video>
+            </div>
+            <div class="process-explanation">
+              <span class="process-label">Desktop</span>
+              <h3 id="desktop-process">Memperjelas submenu desktop</h3>
+              <p>Ikon panah ditambahkan pada item Informasi Berkala untuk memberi penanda bahwa menu tersebut memiliki submenu lanjutan. Penempatan dan pola interaksi dropdown diperbaiki agar konsisten dengan struktur navigasi desktop.</p>
+            </div>
+          </article>
+        </div>
+        
+         <section id="evaluation" class="before-after-section">
+        <div class="section-kicker">
+          <span>Before / After</span>
+        </div>
+
+        <h3 class="before-after-title">Perubahan struktur navigasi<br>sebelum dan sesudah perbaikan</h3>
+
+        <div class="before-after-grid">
+          <article class="before-after-device">
+            <div class="device-header">Mobile</div>
+            <div class="before-after-compare">
+              <div class="compare-panel">
+                <span class="tag before-tag">Before</span>
+                <img src="../assets/images/informasi berkala.jpeg" alt="Tampilan mobile sebelum redesign">
+              </div>
+
+              <div class="compare-panel">
+                <span class="tag after-tag">After</span>
+                <img src="../assets/images/mobile after.png" alt="Tampilan mobile setelah redesign">
+              </div>
+            </div>
+          </article>
+
+          <article class="before-after-device">
+             <div class="device-group desktop-group">
+            <div class="device-header">Desktop</div>
+            <div class="device-grid desktop-grid">
+              <article class="menu-card asset-card desktop-card">
+                <div class="compare-panel">
+                  <span class="tag before-tag">Before</span>
+                <img src="../assets/images/informasi dekstop.png" alt="Halaman home versi desktop sebelum redesign">
+                </div>
+              </article>
+              <article class="menu-card asset-card desktop-card">
+                <div class="compare-panel">
+                  <span class="tag after-tag">After</span>
+                  <img src="../assets/images/dekstop after.png" alt="Halaman menu versi desktop sebelum redesign">
+                </div>
+              </article>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div id="prototype" class="actions prototype-actions">
+        <a class="btn btn-light" href="https://www.figma.com/proto/2Kc6aEXB1MsYZ7QFInqqmu/Prototype-Dekstop?node-id=2041-735&p=f&t=0ybvIqCnLA0SIBqW-1&scaling=scale-down&content-scaling=fixed&page-id=2027%3A325&starting-point-node-id=2041%3A735">Prototype Mobile ↗</a>
+        <a class="btn" href="https://www.figma.com/proto/2Kc6aEXB1MsYZ7QFInqqmu/Prototype-Dekstop?node-id=9-137&p=f&t=y4FBagVWZXUQOcSE-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=9%3A137&show-proto-sidebar=1">Prototype Desktop ↗</a>
+      </div>
+
+      <section id="conclusion" class="case-section">
+        <p class="eyebrow">03 / CONCLUSION</p>
+        <h2>Kesimpulan<br><em>perbaikan.</em></h2>
+        <p class="intro-copy">Perbaikan navigasi ini berhasil membuat struktur Informasi dan Informasi Berkala lebih mudah dipahami pada tampilan mobile maupun desktop.</p>
+
+        <div class="two-cols">
+          <article>
+            <h3>Hasil Perbaikan</h3>
+            <p>Ikon panah disesuaikan dengan arah dropdown pada mobile, indikator submenu ditambahkan pada desktop, dan struktur menu dibuat lebih konsisten serta mudah dikenali.</p>
+          </article>
+          <article>
+            <h3>Dampak bagi Pengguna</h3>
+            <p>Pengguna dapat lebih cepat memahami menu mana yang memiliki submenu lanjutan sehingga proses pencarian informasi menjadi lebih jelas dan efisien.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <a href="projects.html" class="btn btn-light">← Kembali ke Projects</a>
+      </section>
+
+      <footer class="footer">SUGI ALFIN PERMANA · CASE STUDY / CONCEPT CASE STUDY</footer>
+    </main>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/axon-prototype.js"></script>
+  </body>
+</html>
